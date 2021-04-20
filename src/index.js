@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <video autoPlay muted loop id="myVideo">
+    <video autoPlay playsInline muted loop id="myVideo">
                             <source src={Clouds} type="video/mp4"></source>
                             Your browser does not support HTML5 video.
     </video>
