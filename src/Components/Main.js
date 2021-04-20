@@ -79,10 +79,10 @@ export default function Main() {
     let fetchAPI = async (inputFirst, inputSecond) => {
 
         if (option === "City") {
-            var result = await fetch("http://api.openweathermap.org/data/2.5/weather?q=" + inputFirst + "&units=imperial&APPID=" + API)
+            var result = await fetch("https://api.openweathermap.org/data/2.5/weather?q=" + inputFirst + "&units=imperial&APPID=" + API)
             var response = await result.json()
 
-            var fiveResult = await fetch("http://api.openweathermap.org/data/2.5/forecast?q=" + inputFirst + "&units=imperial&APPID=" + API)
+            var fiveResult = await fetch("https://api.openweathermap.org/data/2.5/forecast?q=" + inputFirst + "&units=imperial&APPID=" + API)
             var fiveResponse = await fiveResult.json()
 
             if (response.cod === "404" || fiveResponse.cod === "404") {
@@ -97,11 +97,11 @@ export default function Main() {
             }
         }
         else if (option === "Zip code") {
-            var zipResult = await fetch("http://api.openweathermap.org/data/2.5/weather?zip=" + inputFirst + "&units=imperial&appid=" + API)
+            var zipResult = await fetch("https://api.openweathermap.org/data/2.5/weather?zip=" + inputFirst + "&units=imperial&appid=" + API)
 
             var zipResponse = await zipResult.json()
 
-            var fiveZipResult = await fetch("http://api.openweathermap.org/data/2.5/forecast?zip=" + inputFirst + "&units=imperial&APPID=" + API)
+            var fiveZipResult = await fetch("https://api.openweathermap.org/data/2.5/forecast?zip=" + inputFirst + "&units=imperial&APPID=" + API)
             var fiveZipResponse = await fiveZipResult.json()
 
             console.log(zipResponse, fiveZipResponse, "Zip")
@@ -117,13 +117,13 @@ export default function Main() {
             }
         }
         else {
-            var coordinatesResult = await fetch("http://api.openweathermap.org/data/2.5/weather?lat=" + inputFirst + "&lon=" + inputSecond + "&units=imperial&appid=" + API)
+            var coordinatesResult = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=" + inputFirst + "&lon=" + inputSecond + "&units=imperial&appid=" + API)
 
             var coordinatesResponse = await coordinatesResult.json()
             console.log(coordinatesResponse)
 
 
-            var fiveCoordinatesResult = await fetch("http://api.openweathermap.org/data/2.5/forecast?lat=" + inputFirst + "&lon=" + inputSecond + "&units=imperial&APPID=" + API)
+            var fiveCoordinatesResult = await fetch("https://api.openweathermap.org/data/2.5/forecast?lat=" + inputFirst + "&lon=" + inputSecond + "&units=imperial&APPID=" + API)
             var fiveCoordinatesResponse = await fiveCoordinatesResult.json()
 
             if (coordinatesResponse.cod === "400" || fiveCoordinatesResponse.cod === "400") {

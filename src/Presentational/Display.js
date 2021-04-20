@@ -32,8 +32,8 @@ export default function Display(props) {
                             {
                                 props.five.list.map((x, i) => {
                                     return (
-                                        <div style={{ display: "inline" }}>
-                                            <div className="displayFive" key="i">
+                                        <div style={{ display: "inline" }} key={i}>
+                                            <div className="displayFive">
                                                 <p> Date and Time: {x.dt_txt}</p>
                                                 <p>Current Temperature: {x.main.temp} F</p>
                                                 <p>Feels Like: {x.main.feels_like} F </p>
