@@ -5,8 +5,6 @@ import Display from '../Presentational/Display'
 import Error from '../Presentational/Error'
 import '../App.css';
 
-
-
 export default function Main() {
     let UI, ERROR;
     let API = "a935afd0be256a5f80d968bf1f14a88e";
@@ -14,6 +12,7 @@ export default function Main() {
     const [inputOne, setInputOne] = useState('')
     const [inputTwo, setInputTwo] = useState('')
     const [data, setData] = useState('')
+    const [weather, setTheWeather] = useState('')
     const [fiveData, setfiveData] = useState('')
     const [display, setDisplay] = useState(false)
     const [err, setErr] = useState(false)
@@ -92,6 +91,7 @@ export default function Main() {
             else {
                 setErr(false)
                 setData(response)
+                setTheWeather(response.weather[0].main)
                 setfiveData(fiveResponse)
                 setDisplay(true)
             }
@@ -140,7 +140,7 @@ export default function Main() {
 
     }
     if (display) {
-        UI = <Display info={data} five={fiveData} />
+        UI = <Display info={data} five={fiveData} displayVideo={weather} />
     }
     else {
         UI = (<div></div>)
