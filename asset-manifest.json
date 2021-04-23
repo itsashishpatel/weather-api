@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/weather-api/static/css/main.d186fc5c.chunk.css",
-    "main.js": "/weather-api/static/js/main.fcc995c8.chunk.js",
-    "main.js.map": "/weather-api/static/js/main.fcc995c8.chunk.js.map",
+    "main.css": "/weather-api/static/css/main.50f54d32.chunk.css",
+    "main.js": "/weather-api/static/js/main.296be7fb.chunk.js",
+    "main.js.map": "/weather-api/static/js/main.296be7fb.chunk.js.map",
     "runtime-main.js": "/weather-api/static/js/runtime-main.8a8ae445.js",
     "runtime-main.js.map": "/weather-api/static/js/runtime-main.8a8ae445.js.map",
     "static/js/2.c8fa45d9.chunk.js": "/weather-api/static/js/2.c8fa45d9.chunk.js",
@@ -10,14 +10,23 @@
     "static/js/3.d54511e6.chunk.js": "/weather-api/static/js/3.d54511e6.chunk.js",
     "static/js/3.d54511e6.chunk.js.map": "/weather-api/static/js/3.d54511e6.chunk.js.map",
     "index.html": "/weather-api/index.html",
-    "static/css/main.d186fc5c.chunk.css.map": "/weather-api/static/css/main.d186fc5c.chunk.css.map",
+    "static/css/main.50f54d32.chunk.css.map": "/weather-api/static/css/main.50f54d32.chunk.css.map",
     "static/js/2.c8fa45d9.chunk.js.LICENSE.txt": "/weather-api/static/js/2.c8fa45d9.chunk.js.LICENSE.txt",
-    "static/media/Clouds.c0e6703e.mp4": "/weather-api/static/media/Clouds.c0e6703e.mp4"
+    "static/media/Clear.3417e130.mp4": "/weather-api/static/media/Clear.3417e130.mp4",
+    "static/media/Clouds.c0e6703e.mp4": "/weather-api/static/media/Clouds.c0e6703e.mp4",
+    "static/media/Few.8d13ae43.mp4": "/weather-api/static/media/Few.8d13ae43.mp4",
+    "static/media/Mist.0170cd28.mp4": "/weather-api/static/media/Mist.0170cd28.mp4",
+    "static/media/Rain.300e01bc.mp4": "/weather-api/static/media/Rain.300e01bc.mp4",
+    "static/media/Scattered.dd8bd2f9.mp4": "/weather-api/static/media/Scattered.dd8bd2f9.mp4",
+    "static/media/Shower.78e32b2c.mp4": "/weather-api/static/media/Shower.78e32b2c.mp4",
+    "static/media/Snow.adebf5b2.mp4": "/weather-api/static/media/Snow.adebf5b2.mp4",
+    "static/media/Thunder.3fcd1a19.mp4": "/weather-api/static/media/Thunder.3fcd1a19.mp4",
+    "static/media/broken.c4f091ce.mp4": "/weather-api/static/media/broken.c4f091ce.mp4"
   },
   "entrypoints": [
     "static/js/runtime-main.8a8ae445.js",
     "static/js/2.c8fa45d9.chunk.js",
-    "static/css/main.d186fc5c.chunk.css",
-    "static/js/main.fcc995c8.chunk.js"
+    "static/css/main.50f54d32.chunk.css",
+    "static/js/main.296be7fb.chunk.js"
   ]
 }
